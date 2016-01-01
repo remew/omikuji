@@ -1,0 +1,56 @@
+button {
+	padding: 12px 20px;
+	border-radius: 2px;
+	outline: none;
+	border: 0;
+	background: #3949ab;
+	color: #fff;
+	cursor: pointer;
+	transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	/* box-shadow: 0 2px 2px 0 rgba */
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+				0 1px 5px 0 rgba(0, 0, 0, 0.12),
+				0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#tweet-button {
+	background: #039be5;
+}
+.hide {
+	display: none;
+}
+.timeline {
+	margin-top: 32px;
+	text-align: center;
+}
+
+button:hover {
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+				0 1px 8px 0 rgba(0, 0, 0, 0.12),
+				0 3px 3px -2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+}
+h1 {
+	font-size: 48px;
+}
+h1, p {
+	text-align: center;
+}
+
+#result {
+	font-size: 80px;
+}
+
+@media screen and (max-width: 480px) {
+	#result {
+		font-size: 40px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+}
+
