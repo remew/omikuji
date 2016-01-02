@@ -11,6 +11,9 @@
 			var seed = getSeed();
 			var random = new XorShift(seed);
 			var index = random.next() % rankArray.length;
+			if (index < 0) {
+				index += rankArray.length;
+			}
 			var fortune = '＞' + rankArray[index] + '！！！＜';
 			tweet = 'わたしの今年の運勢は・・・' + fortune + ' #SimpleOmikuji\nhttp://remew.net/omikuji.html';
 			result.innerHTML = fortune;
