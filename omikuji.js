@@ -1,4 +1,5 @@
 (function() {
+	'use strict';
 	window.addEventListener('DOMContentLoaded', function() {
 		var button = document.getElementById('btn');
 		var twtbtn = document.getElementById('tweet-button');
