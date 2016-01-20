@@ -16,7 +16,7 @@
 				index += rankArray.length;
 			}
 			var fortune = '＞' + rankArray[index] + '！！！＜';
-			tweet = 'わたしの今年の運勢は・・・' + fortune + ' #SimpleOmikuji\nhttp://remew.net/omikuji.html';
+			tweet = 'わたしの今年の運勢は・・・' + fortune + ' #SimpleOmikuji\nhttps://remew.net/omikuji.html';
 			result.innerHTML = fortune;
 			button.classList.add('hide');
 			twtbtn.classList.remove('hide');
