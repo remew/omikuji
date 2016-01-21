@@ -16,7 +16,7 @@
 				index += rankArray.length;
 			}
 			var fortune = '＞' + rankArray[index] + '！！！＜';
-			tweet = 'わたしの今年の運勢は・・・' + fortune + ' #SimpleOmikuji\nhttp://remew.net/omikuji.html';
+			tweet = 'わたしの今年の運勢は・・・' + fortune + ' #SimpleOmikuji\nhttps://remew.net/omikuji.html';
 			result.innerHTML = fortune;
 			button.classList.add('hide');
 			twtbtn.classList.remove('hide');
@@ -35,7 +35,7 @@
 	function getSeed() {
 		var seed = storage.getItem('seed');
 		if (!seed) {
-			tmp = new Date().getTime();
+			var tmp = new Date().getTime();
 			seed = JSON.stringify({seed: tmp});
 			storage.setItem('seed', seed);
 		}
